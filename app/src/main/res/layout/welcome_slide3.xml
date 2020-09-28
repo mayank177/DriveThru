@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <com.koonat.easyfont.TextView
+            app:font_path="fonts/Roboto-Medium.ttf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:paddingLeft="@dimen/desc_padding"
+            android:paddingRight="@dimen/desc_padding"
+            android:text="@string/slide_text"
+            android:textAlignment="center"
+            android:textColor="#4a4a4a"
+            android:textSize="16sp" />
+
+        <com.koonat.easyfont.TextView
+            android:layout_marginTop="15dp"
+            app:font_path="fonts/Roboto-Bold.ttf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/order_amp_payment_food"
+            android:textColor="#f03700"
+            android:textSize="24sp" />
+
+        <ImageView
+            android:layout_marginTop="10dp"
+            android:scaleType="fitXY"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/splash_4" />
+
+
+        <View
+            android:layout_marginTop="15dp"
+            android:layout_width="42dp"
+            android:layout_height="3dp"
+            android:background="#ff3b30"/>
+
+    </LinearLayout>
+</RelativeLayout>

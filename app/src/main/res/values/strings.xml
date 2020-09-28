@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">DriveThru</string>
+    <string name="next">NEXT</string>
+    <string name="skip">SKIP</string>
+    <string name="start">GOT IT</string>
+    <string name="slide_text">3 Easy step to receive Your food</string>
+    <string name="select_your_food">Select Your Food</string>
+    <string name="receive_your_food">Receive your food</string>
+    <string name="order_amp_payment_food"><![CDATA[Order & Payment Food]]></string>
 </resources>

@@ -2,5 +2,45 @@
 <resources>
     <color name="colorPrimary">#6200EE</color>
     <color name="colorPrimaryDark">#3700B3</color>
-    <color name="colorAccent">#03DAC5</color>
+    <color name="colorAccent">#ff3b30</color>
+    <color name="white">#ffffff</color>
+    <color name="red">#ff3b30</color>
+    <color name="light_red">#34ff0e00</color>
+    <color name="lightgray">#4a4a4a</color>
+    <!-- Screens background color-->
+    <color name="bg_screen1">#f64c73</color>
+    <color name="bg_screen2">#20d2bb</color>
+    <color name="bg_screen3">#3395ff</color>
+    <color name="bg_screen4">#c873f4</color>
+    <color name="green">#4cae50</color>
+    <color name="yellow">#ff9500</color>
+    <color name="radiobuttonUnChecked">#767676</color>
+    <color name="radiobuttonChecked">#000000</color>
+    <!-- dots inactive colors -->
+    <color name="dot_dark_screen1">#ff9500</color>
+    <color name="dot_dark_screen2">#ff9500</color>
+    <color name="dot_dark_screen3">#ff9500</color>
+    <color name="dot_dark_screen4">#a854d4</color>
+
+    <!-- dots active colors -->
+    <color name="dot_light_screen1">#dddddd</color>
+    <color name="dot_light_screen2">#dddddd</color>
+    <color name="dot_light_screen3">#dddddd</color>
+    <color name="dot_light_screen4">#e4b5fc</color>
+    <color name="darkgray">#9b9b9b</color>
+    <color name="colorGrey">#DDDDDD</color>
+
+    <array name="array_dot_inactive">
+        <item>@color/dot_light_screen1</item>
+        <item>@color/dot_light_screen2</item>
+        <item>@color/dot_light_screen3</item>
+        <item>@color/dot_light_screen4</item>
+    </array>
+
+    <array name="array_dot_active">
+        <item>@color/dot_dark_screen1</item>
+        <item>@color/dot_dark_screen2</item>
+        <item>@color/dot_dark_screen3</item>
+        <item>@color/dot_dark_screen4</item>
+    </array>
 </resources>
