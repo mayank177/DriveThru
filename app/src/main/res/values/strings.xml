@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">DriveThru</string>
     <string name="next">NEXT</string>
-    <string name="skip">SKIP</string>
+    <string name="skip">Get Start</string>
     <string name="start">GOT IT</string>
     <string name="slide_text">3 Easy step to receive Your food</string>
     <string name="select_your_food">Select Your Food</string>
