@@ -40,11 +40,5 @@
             android:src="@drawable/splash_4" />
 
 
-        <View
-            android:layout_marginTop="15dp"
-            android:layout_width="42dp"
-            android:layout_height="3dp"
-            android:background="#ff3b30"/>
-
     </LinearLayout>
 </RelativeLayout>
