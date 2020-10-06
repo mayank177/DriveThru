@@ -10,4 +10,24 @@
     <dimen name="slide_title">30dp</dimen>
     <dimen name="slide_desc">16dp</dimen>
     <dimen name="desc_padding">40dp</dimen>
+
+
+
+    <dimen name="tab_max_width">50dp</dimen>
+
+    <dimen name="default_like_padding">4dp</dimen>
+    <dimen name="default_like_text_size">14sp</dimen>
+    <dimen name="default_layout_margin">13dp</dimen>
+
+
+    <dimen name="toolbar_height">56dp</dimen>
+    <dimen name="tb_button_margin">16dp</dimen>
+    <dimen name="elevation">16dp</dimen>
+    <dimen name="card_corner_radius">2dp</dimen>
+
+    <dimen name="dimen_login_logo">80dp</dimen>
+    <dimen name="dimen_login_logo_margin">-40dp</dimen>
+    <dimen name="dimen_login_logo_margin_view">40dp</dimen>
+
+    <dimen name="app_bar_height">256dp</dimen>
 </resources>

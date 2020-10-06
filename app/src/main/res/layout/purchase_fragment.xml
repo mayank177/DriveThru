@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:background="@color/bg_color_home">
+    <LinearLayout
+        android:id="@+id/search"
+        android:focusable="true"
+        android:visibility="gone"
+        android:focusableInTouchMode="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="7dp"
+        android:layout_marginStart="7dp"
+        android:background="@drawable/round_background"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <com.koonat.easyfont.TextView
+            android:id="@+id/searchbox"
+            android:text="@string/categories"
+            android:textColor="#486cdc"
+            android:layout_gravity="center_vertical"
+            android:drawableStart="@drawable/icon"
+            android:layout_marginStart="2dp"
+            android:layout_marginEnd="2dp"
+            android:drawablePadding="5dp"
+            android:gravity="center_vertical"
+            android:background="@drawable/search_round_background"
+            app:font_path="fonts/Roboto-Medium.ttf"
+            android:layout_width="match_parent"
+            android:layout_height="38dp" />
+
+    </LinearLayout>
+    <View
+        android:fadingEdgeLength="3dp"
+        android:id="@+id/view"
+        android:layout_below="@+id/search"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#ddd"/>
+    <androidx.core.widget.NestedScrollView
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:scrollbars="none"
+        android:layout_below="@+id/view"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.facebook.shimmer.ShimmerFrameLayout
+                android:id="@+id/shimmer_view_container1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:visibility="visible">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <com.koonat.easyfont.TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:text="@string/no_records_available"
+                            android:textColor="@color/background_color"
+                            android:textSize="14sp"
+                            android:visibility="gone"
+                            android:id="@+id/no_data"
+                            android:layout_centerInParent="true"
+                            android:textStyle="bold"
+                            app:font_path="fonts/Roboto-Medium.ttf" />
+                        <LinearLayout
+                            android:id="@+id/linearsale"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:paddingBottom="5dp"
+                            android:paddingTop="5dp">
+
+                            <com.koonat.easyfont.TextView
+                                android:layout_weight="1"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="10dp"
+                                android:text="@string/categories"
+                                android:textColor="#333333"
+                                android:textSize="18sp"
+                                android:layout_gravity="start"
+                                android:textStyle="bold"
+                                app:font_path="fonts/Roboto-Medium.ttf" />
+                            <com.koonat.easyfont.TextView
+                                android:layout_weight="1"
+                                android:id="@+id/all_view_sale"
+                                android:layout_width="0dp"
+                                android:gravity="end"
+                                android:padding="5dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginEnd="5dp"
+                                android:text="@string/view_all"
+                                android:textColor="@color/red_see"
+                                android:textSize="12sp"
+                                android:textStyle="bold"
+                                app:font_path="fonts/Roboto-Medium.ttf" />
+                        </LinearLayout>
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:layout_below="@+id/linearsale"
+                                android:id="@+id/recyclerview_sale"
+                                android:layout_width="match_parent"
+                                android:layout_height="157dp"
+                                android:layout_marginStart="5dp"
+                                android:scrollbars="none">
+                            </androidx.recyclerview.widget.RecyclerView>
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+            </com.facebook.shimmer.ShimmerFrameLayout>
+
+
+            <com.facebook.shimmer.ShimmerFrameLayout
+                android:id="@+id/shimmer_view_container3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <LinearLayout
+                            android:id="@+id/linearcate"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:paddingBottom="5dp"
+                            android:paddingTop="5dp">
+
+                            <com.koonat.easyfont.TextView
+                                android:layout_weight="1"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="10dp"
+                                android:text="@string/restaurent_near_by_you"
+                                android:textColor="#4a4a4a"
+                                android:textSize="17sp"
+                                app:font_path="fonts/Roboto-Medium.ttf" />
+                            <com.koonat.easyfont.TextView
+                                android:layout_weight="1"
+                                android:id="@+id/all_view_category"
+                                android:layout_width="0dp"
+                                android:gravity="end"
+                                android:padding="5dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginEnd="5dp"
+                                android:text="@string/view_all"
+                                android:textColor="@color/red_see"
+                                android:textSize="12sp"
+                                android:textStyle="bold"
+                                app:font_path="fonts/Roboto-Medium.ttf" />
+                        </LinearLayout>
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/recyclerview_cate"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="5dp"
+                            android:scrollbars="none"
+                            android:layout_below="@+id/linearcate">
+                        </androidx.recyclerview.widget.RecyclerView>
+
+                        <TextView
+                            android:id="@+id/no_found"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="40dp"
+                            android:gravity="center"
+                            android:textColor="@color/bottom_bar_bg_selected_color"
+                            android:text="@string/no_records_available"
+                            android:textSize="18sp"
+                            android:visibility="gone" />
+
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+            </com.facebook.shimmer.ShimmerFrameLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:layout_gravity="center_horizontal"
+                android:textSize="14sp"
+                android:visibility="gone" />
+           <LinearLayout
+               android:layout_marginTop="10dp"
+               android:layout_gravity="center_horizontal"
+               android:layout_width="260dp"
+               android:visibility="gone"
+               android:gravity="center_vertical"
+               android:layout_height="wrap_content">
+               <ImageView
+                   android:layout_marginStart="20dp"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content" />
+               <com.koonat.easyfont.TextView
+                   android:id="@+id/submit"
+                   android:visibility="visible"
+                   app:font_path="fonts/Roboto-Regular.ttf"
+                   android:layout_width="match_parent"
+                   android:layout_height="45dp"
+                   android:textSize="18sp"
+                   android:gravity="center"
+                   android:textColor="#FFFFFF"
+                   />
+           </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</RelativeLayout>

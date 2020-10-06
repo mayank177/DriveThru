@@ -7,4 +7,10 @@
     <string name="select_your_food">Select Your Food</string>
     <string name="receive_your_food">Receive your food</string>
     <string name="order_amp_payment_food"><![CDATA[Order & Payment Food]]></string>
+    <string name="categories">Categories</string>
+    <string name="view_all">See All</string>
+    <string name="no_records_available">No Records Available</string>
+    <string name="restaurent_near_by_you">Restaurent Near by you</string>
+    <string name="search_restaurent_amp_dishes"><![CDATA[Search restaurent amp&; dishes…]]></string>
+
 </resources>
